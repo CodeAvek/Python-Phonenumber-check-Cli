@@ -5,7 +5,6 @@ In This Code We Will Execute from the Given Number The Origin Of Sim country And
 # Written by CodeAx
 # Write the +91 in the begining of phone number::::While using
 
-
 import phonenumbers
 from phonenumbers import carrier
 from phonenumbers import geocoder
