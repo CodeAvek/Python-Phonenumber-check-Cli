@@ -20,7 +20,7 @@ n = 0
 br = pyfiglet.figlet_format("CodeAx1")
 print(B+br)
 print('''
-[Check Sim Information]
+[Check Phone Number Information]
 Coded By : CodeAX1
 ________________________________________
 ''')
