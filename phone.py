@@ -3,11 +3,15 @@ import phonenumbers
 from phonenumbers import carrier
 from phonenumbers import geocoder
 import os
+import pyfiglet
 try :
   import phonenumbers
 except ImportError:
   os.system ("pip install phonenumbers")
- 
+ try:
+  import pyfiglet
+ except ImportError:
+  os.system('pip install pyfiglet')
 os.system ("clear")
 rs = requests.session()
 R = "\033[1;31m"
