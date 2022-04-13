@@ -65,3 +65,5 @@ ls
 ```
 python phone.py
 ```
+
+Now You Tool Is Sucessfully started :)
