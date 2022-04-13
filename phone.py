@@ -27,7 +27,7 @@ ________________________________________
 
 try:
     sign = ('+')
-    country_code =(input(R+'Enter Your Country Code  with + sign :'))
+    country_code =(input(R+'Enter Your Country Code  without + :'))
     number = (input(R+'Enter Taregt Number :'))
     a=(sign+country_code+number)
     print(Y+"Your Targeted Number is",a)
