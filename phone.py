@@ -5,7 +5,7 @@ os.system ("pip install phonenumbers")
 os.system('pip install pyfiglet')
 import requests
 import phonenumbers
-from phonenumbers import carrier, timezone, geocoder
+from phonenumbers import carrier,timezone, geocoder
 import os
 import pyfiglet
 os.system('clear')
