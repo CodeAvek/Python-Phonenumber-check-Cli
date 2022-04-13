@@ -5,8 +5,7 @@ os.system ("pip install phonenumbers")
 os.system('pip install pyfiglet')
 import requests
 import phonenumbers
-from phonenumbers import carrier
-from phonenumbers import geocoder
+from phonenumbers import carrier, timezone, geocoder
 import os
 import pyfiglet
 os.system('clear')
@@ -25,18 +24,20 @@ Coded By : CodeAX1
 ________________________________________
 ''')
 
+try:
     country_code =(input('Enter Your Country Code  with + sign :'))
     number = (input('Enter Taregt Number :'))
-    a = (country_code+number)
+    a=(country_code+number)
     print(Y+"Your Targeted Number is",a)
-    phone_number = phonenumbers.parse(a)
 
-    print(R+"Origin country is",G+geocoder.description_for_number(phone_number ,"en"))
+    phone_number = phonenumbers.parse(a, "GB")
 
-    print(R+"Company oF Sim is",G+carrier.name_for_number(phone_number, "en"))
-    print(R+"Valid Mobile Number:",G+phonenumbers.is_valid_number(phone_number, "en"))
-
-except:
+    print(R+"Valid check: ",phonenumbers.is_valid_number(phone_number))
+    print(R+"Company oF Sim is: ",carrier.name_for_number(phone_number, "en"))
+    print(R+"Location: ",timezone.time_zones_for_number(phone_number))
+    print(R+"Origin country is: ",geocoder.description_for_number(phone_number, 'en'))
+    
+except:   
     print('Something is wrong')
     print('Contact Owner of Script')
     
