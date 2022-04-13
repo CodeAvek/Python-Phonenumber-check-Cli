@@ -48,7 +48,7 @@ while True:
 
 ```
 
-## Run On Tewrmux
+## Run On Termux
 
 ```
 wget https://raw.githubusercontent.com/CodeAxAvek/Python-Phonenumber-check-Cli/main/phone.py
