@@ -26,9 +26,10 @@ ________________________________________
 ''')
 
 try:
-    country_code =(input('Enter Your Country Code  with + sign :'))
-    number = (input('Enter Taregt Number :'))
-    a=(country_code+number)
+    sign = ('+')
+    country_code =(input(R+'Enter Your Country Code  with + sign :'))
+    number = (input(R+'Enter Taregt Number :'))
+    a=(sign+country_code+number)
     print(Y+"Your Targeted Number is",a)
 
     phone_number = phonenumbers.parse(a, "GB")
