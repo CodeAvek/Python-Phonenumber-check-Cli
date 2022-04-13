@@ -1,5 +1,5 @@
 import os
-os.system('pkg install pyhton')
+os.system('pkg install python')
 os.system('pip install requests')
 os.system ("pip install phonenumbers")
 os.system('pip install pyfiglet')
