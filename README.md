@@ -50,9 +50,18 @@ while True:
 
 ## Run On Termux
 
-``` apt update && apt upgrade ```
+```
+apt update && apt upgrade
+```
 
-``` wget https://raw.githubusercontent.com/CodeAvek/Python-Phonenumber-check-Cli/main/phone.py ```
+```
+wget https://raw.githubusercontent.com/CodeAvek/Python-Phonenumber-check-Cli/main/phone.py
+```
 
-``` ls ```
-``` python phone.py ```
+```
+ls
+```
+
+```
+python phone.py
+```
