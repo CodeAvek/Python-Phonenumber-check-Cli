@@ -34,8 +34,8 @@ try:
     print(R+"Origin country is",G+geocoder.description_for_number(phone_number ,"en"))
 
     print(R+"Company oF Sim is",G+carrier.name_for_number(phone_number, "en"))
-    print(R+"Valid Mobile Number:",G+phonenumbers.is_valid_number(phone_number))
-    print(R+"Checking possibility of Number:",G+phonenumbers.is_possible_number(phone_number))
+    print(R+"Valid Mobile Number:",G+phonenumbers.is_valid_number(phone_number, "en"))
+    print(R+"Checking possibility of Number:",G+phonenumbers.is_possible_number(phone_number, "en"))
 except:
     print('Something is wrong')
     print('Contact Owner of Script')
