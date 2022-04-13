@@ -23,16 +23,15 @@ Coded By : CodeAX1
 ________________________________________
 ''')
 try:
-    while True:
-        country_code =(input('Enter Your Country Code  with + sign :'))
-        number = (input('Enter Taregt Number :'))
-        a = (country_code+number)
-        print(Y+"Your Targeted Number is",a)
-        phone_number = phonenumbers.parse(a)
+    country_code =(input('Enter Your Country Code  with + sign :'))
+    number = (input('Enter Taregt Number :'))
+    a = (country_code+number)
+    print(Y+"Your Targeted Number is",a)
+    phone_number = phonenumbers.parse(a)
 
-        print(R+"Origin country is",G+geocoder.description_for_number(phone_number ,"en"))
+    print(R+"Origin country is",G+geocoder.description_for_number(phone_number ,"en"))
 
-        print(R+"Company oF Sim is",G+carrier.name_for_number(phone_number, "en"))
+    print(R+"Company oF Sim is",G+carrier.name_for_number(phone_number, "en"))
 except:
     print('Something is wrong')
     print('Contact Owner of Script')
