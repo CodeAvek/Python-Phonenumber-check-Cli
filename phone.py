@@ -39,4 +39,5 @@ try:
 except:
     print('Something is wrong')
     print('Contact Owner of Script')
+    
     os.system ("xdg-open https:/codeax.herokuapp.com/")
