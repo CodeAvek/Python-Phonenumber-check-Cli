@@ -53,6 +53,9 @@ while True:
 ```
 apt update && apt upgrade
 ```
+```
+pkg install wget
+```
 
 ```
 wget https://raw.githubusercontent.com/CodeAvek/Python-Phonenumber-check-Cli/main/phone.py
