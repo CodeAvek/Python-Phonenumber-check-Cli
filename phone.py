@@ -1,4 +1,6 @@
 import os
+os.system('pkg install pyhton')
+os.system('pkg install wget')
 os.system ("pip install phonenumbers")
 os.system('pip install pyfiglet')
 import requests
@@ -32,6 +34,8 @@ try:
     print(R+"Origin country is",G+geocoder.description_for_number(phone_number ,"en"))
 
     print(R+"Company oF Sim is",G+carrier.name_for_number(phone_number, "en"))
+    print(R+"Valid Mobile Number:",G+phonenumbers.is_valid_number(phone_number))
+    print(R+"Checking possibility of Number:",G+phonenumbers.is_possible_number(phone_number))
 except:
     print('Something is wrong')
     print('Contact Owner of Script')
