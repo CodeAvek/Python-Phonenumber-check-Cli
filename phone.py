@@ -1,3 +1,4 @@
+import os
 os.system ("pip install phonenumbers")
 os.system('pip install pyfiglet')
 import requests
