@@ -47,3 +47,15 @@ while True:
 
 
 ```
+
+## Run On Tewrmux
+
+```
+wget https://raw.githubusercontent.com/CodeAxAvek/Python-Phonenumber-check-Cli/main/phone.py
+```
+```
+ls
+```
+```
+python phone.py
+```
