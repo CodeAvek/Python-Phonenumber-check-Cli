@@ -8,9 +8,9 @@ try :
   import phonenumbers
 except ImportError:
   os.system ("pip install phonenumbers")
- try:
+try:
   import pyfiglet
- except ImportError:
+except ImportError:
   os.system('pip install pyfiglet')
 os.system ("clear")
 rs = requests.session()
