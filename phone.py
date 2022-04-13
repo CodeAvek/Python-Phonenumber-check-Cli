@@ -1,18 +1,12 @@
+os.system ("pip install phonenumbers")
+os.system('pip install pyfiglet')
 import requests
 import phonenumbers
 from phonenumbers import carrier
 from phonenumbers import geocoder
 import os
 import pyfiglet
-try :
-  import phonenumbers
-except ImportError:
-  os.system ("pip install phonenumbers")
-try:
-  import pyfiglet
-except ImportError:
-  os.system('pip install pyfiglet')
-os.system ("clear")
+os.system('clear')
 rs = requests.session()
 R = "\033[1;31m"
 G = "\033[1;32m"
@@ -27,16 +21,18 @@ print('''
 Coded By : CodeAX1
 ________________________________________
 ''')
+try:
+    while True:
+        country_code =(input('Enter Your Country Code  with + sign :'))
+        number = (input('Enter Taregt Number :'))
+        a = (country_code+number)
+        print(Y+"Your Targeted Number is",a)
+        phone_number = phonenumbers.parse(a)
 
-while True:
-    a = input(G+'''press q to quit this code
-    Enter Your PhoneNumber with +country_code :''')
-    if a=="q":
-        print("We SuccessFully Exited this code")
-        break
+        print(R+"Origin country is",G+geocoder.description_for_number(phone_number ,"en"))
 
-    phone_number = phonenumbers.parse(a)
-
-    print(R+"Origin country is",geocoder.description_for_number(phone_number ,"en"))
-
-    print(R+"Company oF Sim is",carrier.name_for_number(phone_number, "en"))
+        print(R+"Company oF Sim is",G+carrier.name_for_number(phone_number, "en"))
+except:
+    print('Something is wrong')
+    print('Contact Owner of Script')
+    os.system ("xdg-open https:/codeax.herokuapp.com/")
