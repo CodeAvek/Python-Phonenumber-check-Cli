@@ -24,7 +24,7 @@ print('''
 Coded By : CodeAX1
 ________________________________________
 '''
-try:
+
     country_code =(input('Enter Your Country Code  with + sign :'))
     number = (input('Enter Taregt Number :'))
     a = (country_code+number)
