@@ -33,10 +33,10 @@ try:
 
     phone_number = phonenumbers.parse(a, "GB")
 
-    print(R+"Valid check: ",phonenumbers.is_valid_number(phone_number))
-    print(R+"Company oF Sim is: ",carrier.name_for_number(phone_number, "en"))
-    print(R+"Location: ",timezone.time_zones_for_number(phone_number))
-    print(R+"Origin country is: ",geocoder.description_for_number(phone_number, 'en'))
+    print(G+"Valid check: ",phonenumbers.is_valid_number(phone_number))
+    print(G+"Company oF Sim is: ",carrier.name_for_number(phone_number, "en"))
+    print(G+"Location: ",timezone.time_zones_for_number(phone_number))
+    print(G+"Origin country is: ",geocoder.description_for_number(phone_number, 'en'))
     
 except:   
     print('Something is wrong')
